@@ -1,0 +1,71 @@
+:root{
+    --pri:#1E3A8A;
+    --sec:#FFFFFF;
+    --ter:#0B1636;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navigation{
+    background-color: var(--pri);
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.logo{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+.upperNav{
+    display: flex;
+    align-items: center;
+    background-color: var(--ter);
+    border-bottom-left-radius: 20px;
+}
+.lowerNav{
+    display: flex;
+    align-items: center;
+    background-color: var(--pri);
+    border-top-left-radius: 20px;
+}
+nav{
+	display:flex;
+	align-content: center;
+    justify-content: space-between;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+nav ul li a{
+    text-decoration: none; 
+    padding:  40px;
+	display: block;
+	padding: 10px 20px; 
+    color: var(--sec);
+}
+#search, #applyNow
+{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 8px;
+}
+.lowerNav a:hover{
+    background-color: var(--ter);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.upperNav a:hover{
+    background-color: var(--pri);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
